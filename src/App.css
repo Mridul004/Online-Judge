@@ -1,0 +1,353 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heading{
+  margin-left: 260px;
+}
+
+
+
+.category{
+  margin-left: 220px;
+  margin-right: 20px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.category-1{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  background-color: #dad6d6;
+}
+
+.category-2{
+  margin-left: 220px;
+  margin-right: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  background-color: #dad6d6;
+}
+
+.subheading{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.probs{
+  margin-left: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.header_underline{
+  border: 1px solid black;
+  margin-right: 150px;
+  margin-left: 260px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(38, 39, 39);
+  color: #fff;
+  padding: 5px;
+  padding-left: 30px;
+}
+
+.image{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.navbar__logo a   {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+  font-size: 16px;
+}
+
+.navbar__links li {
+  margin-right: 20px;
+}
+
+.navbar__links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar__logo a:hover{
+  color: #ccc;
+  margin: 1px;
+}
+
+.navbar__links a:hover {
+  color: #ccc;
+  margin: 3px;
+}
+
+.navbar__add-button {
+  background-color: rgb(38, 39, 39);
+  color: white;
+  border: none;
+  /* padding: 4px 8px; */     
+  font-size: 16px;
+  /* margin-right: 0px; */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.1s ease;
+  margin-left: 930px ;
+}
+
+.navbar__add-button:hover {
+  background-color: #0056b3;
+}
+
+.tagline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+
+.baseline{
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 1px solid black;
+}
+
+.Card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;  
+  flex-wrap: wrap;
+
+}
+
+.box1{
+  &:nth-child(2) {
+    background: rgb(125, 145, 208);
+  }
+  &:nth-child(3){
+    background: rgb(203, 203, 133);
+  }
+  &:nth-child(4){
+    background: rgb(180, 155, 108);
+  }
+  display: flex;
+  background-color: rgb(144, 249, 144);
+  border: 2px  solid black;
+  height: 300px;
+  width: 400px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.table-container {
+  margin: 20px;
+}
+
+table {
+  width: 73%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-left: 260px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+table tbody tr:hover {
+  background-color: #a5a1a1;
+  cursor: pointer;
+}
+
+.user-statistics {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-statistics h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  
+  color: #555;
+}
+
+.value {
+  color: #333;
+}
+
+.avatar{
+  height: 200px;
+  width: 15%;
+  padding-left: 900px;
+  display: flex;
+}
+
+.graph{
+  height: 500px;
+  width: 50%;
+  padding-left: 360px;
+  padding-right: 400px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  border: 5px solid green
+  ;
+}
+
+.profile-text{
+  flex: 1;
+  display: flex;
+}
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+}
+
+.problem-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.problem-header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.problem-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.problem-content {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.problem-description h2,
+.input-output h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+input-output pre {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.example{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.problem-heading{
+  text-decoration: solid;
+}
+.problembutton{
+  display: flex;
+  background-color: green;
+  color: white;
+  margin-left: 00px;
+  margin-top: 20px;
+}
+
+.choose-text{
+  padding: 100px;
+}
+
+.file-choose{
+  padding-left: 250px;
+}
