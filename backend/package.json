@@ -1,0 +1,48 @@
+{
+  "name": "codehub-backend",
+  "version": "1.0.0",
+  "description": "A modern online judge with forum and blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --watch --runInBand",
+    "start": "nodemon server.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeHub-BD/CodeHub-Backend.git"
+  },
+  "keywords": [
+    "online-judge",
+    "node",
+    "express"
+  ],
+  "author": "KhanShaheb34, RakibulRanak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeHub-BD/CodeHub-Backend/issues"
+  },
+  "homepage": "https://github.com/CodeHub-BD/CodeHub-Backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.14",
+    "morgan": "^1.10.0",
+    "simple-mongoose-autoincrement": "^1.2.1",
+    "supertest": "^4.0.2",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
